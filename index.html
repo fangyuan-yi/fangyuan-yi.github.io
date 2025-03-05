@@ -86,15 +86,20 @@
         }
         
         .navbar {
-            background-color: #F4ABC4; /* Dark blue background */
+            background-color: #DEB5C5; /* Dark blue background */
             padding: 10px 0;
             position: fixed; /* Stays at the top */
-            width: 80%;
+            width: 100%;
             top: 0;
             left: 0;
             z-index: 1000; /* Ensures it's above other content */
         }
-        
+        .navbar .nav-container {
+            max-width: 900px; /* Match this with body max-width */
+            margin: 0 auto; /* Center it */
+            text-align: center; /* Align text */
+        }
+
         .navbar ul {
             list-style: none;
             padding: 0;
