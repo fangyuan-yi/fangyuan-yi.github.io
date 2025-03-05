@@ -20,8 +20,8 @@
             text-align: center;
         }
         .profile-pic {
-            width: 140px;
-            height: 140px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #595B83;
@@ -66,7 +66,7 @@
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         .paper-title {
             font-weight: bold;
@@ -76,6 +76,7 @@
         .pre {
             font-style: italic;
             font-size: 14px;
+            margin-bottom: 10px;
             color: #595B83;
         }
         hr {
@@ -83,8 +84,61 @@
             border-top: 1px solid #ccc;
             margin: 20px 0;
         }
+        
+        .navbar {
+            background-color: #F4ABC4; /* Dark blue background */
+            padding: 10px 0;
+            position: fixed; /* Stays at the top */
+            width: 80%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensures it's above other content */
+        }
+        
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #F4ABC4; /* Highlight color */
+        }
+        
+        body {
+            padding-top: 50px; /* Ensures content is not hidden under the fixed navbar */
+        }
+
+        
     </style>
 </head>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="others.html">Others</a></li>
+    </ul>
+</nav>
+
+
+    
+    
 <body>
     <div class="profile-container">
         <img src="picture/profile_pic_small.jpg" alt="Profile Photo" class="profile-pic">
