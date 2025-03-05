@@ -1,195 +1,146 @@
 
+html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fangyuan YI - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /*https://colorhunt.co/palette/f4abc4595b83333456060930*/
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 5px auto;
-            padding: 5px;
-            border: 0px solid #595B83;
-            line-height: 1.0;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
             color: #333456;
+            background-color: #f9f9f9;
         }
         
-        announcement p {  
-            margin-bottom: 5px; 
-            line-height: 1.1;
-            color: #595B83
-        }
-        
-        .contact-info {
-            list-style: none; /* Remove default list styling */
-            padding-left: 0;
-            text-align: center; /* Center align the list items */
-        }
-        
-        .contact-info li {
-            display: inline-block; /* Make list items inline */
-            margin: 3px 8px; /* Reduce spacing between items */
-        }
-        
-        h1 { /*name*/
+        .profile-container {
             text-align: center;
+        }
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #595B83;
+        }
+        h1 {
             font-size: 28px;
-            margin-bottom: 10px;
-            color: #333456;
-
+            margin-top: 10px;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .contact-info li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .contact-info a {
+            color: #595B83;
+            font-size: 18px;
+            text-decoration: none;
         }
         
-        h2 {/*section*/
-            font-size: 20px;
-            margin-top: 10px; 
-            margin-bottom: 10px; 
-            padding-bottom: 0px;
-            border-bottom: none; 
-            color: #060930;
-        }
-
         .section {
-            margin-bottom: 10px;
+            margin-top: 30px;
         }
-        .entry {
-            margin-bottom: 10px;
+        h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #9AA6B2;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #333456;
         }
-
+        .announcement p {
+            text-align: center;
+            font-size: 16px;
+            color: #595B83;
+        }
         ul {
-            list-style-type: disc; /* Normal bullet points */
-            padding-left: 20px; /* Indents bullets */
+            list-style: none;
+            padding: 0;
         }
-        
         li {
-            margin-bottom: 10px; /* Adds spacing between each bullet point */
+            margin-bottom: 10px;
         }
-
+        .paper-title {
+            font-weight: bold;
+            color: #333456;
+            text-decoration: none;
+        }
         .pre {
-            font-style: italic; /* Makes text italic like <i> */
-            font-size: 13px; /* Adjust size if needed */
-            color: #595B83; /* Change to your preferred color */
-            font-family: inherit; /* Ensures it matches surrounding text */
+            font-style: italic;
+            font-size: 14px;
+            color: #595B83;
         }
-
-        .profile-pic {    
-            display: block;
-            width: 80%; /* Adjust percentage as needed */
-            max-width: 600px; /* Controls max size */
-            height: auto; /* Keeps aspect ratio */
-            margin: 0 auto; /* Centers the image */
-        }
-
         hr {
             border: none;
-            border-top: 1px solid #F4ABC4; /* Light gray dividing line */
-            margin: 10px 0; /* Adjust vertical spacing */
-            /* width: 80%; /* Make it smaller than full width */
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
-        
-}
-
     </style>
 </head>
 <body>
-
-
-    <!--  Profile Picture -->
-
-    
     <div class="profile-container">
         <img src="picture/profile_pic_small.jpg" alt="Profile Photo" class="profile-pic">
         <h1>Fangyuan Yi （易 方圆）</h1>
-        <p style="text-align: center; font-size: 14px;">(Last updated: March 2025)</p>
         <ul class="contact-info">
-            <li>Email: fyi (at) keio dot jp</li>
-            <li class="sns">
-                <a href="https://x.com/fyi_119">X</a>
-            </li>
+            <li><i class="fas fa-envelope"></i> fyi (at) keio dot jp</li>
+            <li><a href="https://x.com/fyi_119"><i class="fab fa-x-twitter"></i> X</a></li>
         </ul>
     </div>
-
     
-    <!-- Contact Information 
-    <div class="contact">
-        <p>Assistant Professor (Tenure Track)</p>
-        <p>Faculty of Economics, Keio University</p>
-        <p>Email: <a href="mailto:yifangyuan1109@gmail.com">yifangyuan1109@gmail.com</a></p> 
-    </div>-->
-
     <div class="announcement">
-            
         <p>I will join the Faculty of Economics at Keio University as an Assistant Professor (Tenure Track) in April 2025.</p>
         <p>Previously, I worked as a data scientist at AI Lab, CyberAgent, Inc.</p>
         <p>I earned my Ph.D. in Economics from Princeton University in 2023.</p>
-            
     </div>
     
-    <hr> 
-
     
-    <!-- Research Interests -->
     <div class="section">
-        <h2>RESEARCH INTEREST</h2>
+        <h2>Research Interest</h2>
         <p>Macroeconomics, International Macroeconomics, International Finance</p>
     </div>
-
-    <hr> 
-
     
-    <!-- Working Papers and Works in Progress -->
+    
     <div class="section">
-    <h2>WORKING PAPERS AND WORKS IN PROGRESS</h2>
-    <ul>
-        <li>
-            <a href="https://www.dropbox.com/scl/fi/4vk7rtpw01ch9ioc1jh05/Insulated_LC.pdf?rlkey=tvy7ufn5dfj5rniwthv3ik2yb&e=1&st=hb05tsit&dl=0" class="paper-title">
-                The Insulated Local Currency Sovereign Risk 
-            </a> 
-            <i> Under Review</i>
-            <br>
-            <p class="pre">Presented at: Princeton Student Macroshop (2019-2022)</p>
-        </li>
-
-        <li>
-            <a href="https://www.dropbox.com/scl/fi/z1oka2cehind1xz1ixzyi/EthanKapstein_JonahRex_AdityamohanTantravahi_FangyuanYi.pdf?rlkey=aprz6n6yuu6i5zijxzehgrglq&st=vsb54sxi&dl=0" class="paper-title">
-                Penalties and Premiums in Sovereign Credit Ratings
-            </a> 
-            (with Ethan B. Kapstein, Jonah M. Rexer, and Adityamohan Tantravahi) 
-            <i> Under Review</i><br>
-            <p class="pre"> Presented at: Princeton Development Finance Workshop (2023), University of Tokyo Macroeconomics Workshop (2024)</p>
-        </li>
-
-        <li>
-            <a class="paper-title">
-                Sovereign Default: with Public Debt as Liquidity
-            </a> 
-            <i> Under Review</i><br>
-            <p class="pre"> Presented at: University of Tokyo Macro-Finance Workshop (2016), Macroeconomics Workshop (2016), 
-            Conference at the Institution of Social Science (2017), Japan Economics Society Annual Meeting (2017)</p>
-        </li>
-
-        <li>
-            <aclass="paper-title">
-                Currency Choice of Government Bond
-            </a><br>
-            <i> Draft in progress</i><br>
-        </li>
-    </ul>
-</div>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WT97N22CKT"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-WT97N22CKT');
-</script>
-
-
-
+        <h2>Working Papers and Works in Progress</h2>
+        <ul>
+            <li>
+                <a href="#" class="paper-title">The Insulated Local Currency Sovereign Risk</a>
+                <i> Under Review</i>
+                <br>
+                <p class="pre">Presented at: Princeton Student Macroshop (2019-2022)</p>
+            </li>
+            <li>
+                <a href="#" class="paper-title">Penalties and Premiums in Sovereign Credit Ratings</a>
+                (with Ethan B. Kapstein, Jonah M. Rexer, and Adityamohan Tantravahi)
+                <i> Under Review</i>
+                <br>
+                <p class="pre">Presented at: Princeton Development Finance Workshop (2023), University of Tokyo Macroeconomics Workshop (2024)</p>
+            </li>
+            <li>
+                <a class="paper-title">Sovereign Default: with Public Debt as Liquidity</a>
+                <i> Under Review</i>
+                <br>
+                <p class="pre">Presented at: University of Tokyo Macro-Finance Workshop (2016), Macroeconomics Workshop (2016), Japan Economics Society Annual Meeting (2017)</p>
+            </li>
+            <li>
+                <a class="paper-title">Currency Choice of Government Bond</a>
+                <br>
+                <p class="pre">Draft in progress</p>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
+
+"""
+
+display(HTML(html_code))
