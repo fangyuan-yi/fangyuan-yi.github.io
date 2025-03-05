@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fangyuan YI - CV</title>
     <style>
+        /*https://colorhunt.co/palette/f4abc4595b83333456060930*/
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 5px auto;
             padding: 5px;
-            border: 0px solid #ddd;
+            border: 1px solid #595B83;
             line-height: 1.0;
-            color: #61677A;
+            color: #333456;
         }
         
-        .announcement p {  /* Fixed selector */
-            margin-bottom: 5px; /* Reduce space between paragraphs */
-            line-height: 1.2; /* Tighten line spacing */
+        announcement p {  
+            margin-bottom: 5px; 
+            line-height: 1.2;
+            color: #595B83
         }
         
         .contact-info {
@@ -32,44 +34,30 @@
             margin: 3px 8px; /* Reduce spacing between items */
         }
         
-        h1 {
+        h1 { /*name*/
             text-align: center;
             font-size: 28px;
             margin-bottom: 5px;
-            color: #61677A;
+            color: #333456;
 
         }
-        h2 {
+        
+        h2 {/*section*/
             font-size: 20px;
-            margin-top: 40px; 
-            margin-bottom: 5px; 
+            margin-top: 10px; 
+            margin-bottom: 10px; 
             padding-bottom: 0px;
             border-bottom: none; 
-            color: #272829;
+            color: #060930;
         }
 
-
-        .contact {
-            text-align: center;
-            font-size: 16px;
-        }
-        .contact a {
-            color: #525252;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
         .section {
             margin-bottom: 5px;
         }
         .entry {
             margin-bottom: 5px;
         }
-        .date {
-            float: right;
-            font-weight: italic;
-        }
+
         ul {
             list-style-type: disc; /* Normal bullet points */
             padding-left: 20px; /* Indents bullets */
@@ -77,6 +65,11 @@
         
         li {
             margin-bottom: 10px; /* Adds spacing between each bullet point */
+        }
+
+        .pre {
+            font-style: italic;
+            font-size: 14px;
         }
 
         .profile-pic {    
@@ -89,8 +82,8 @@
 
         hr {
             border: none;
-            border-top: 1px solid #ccc; /* Light gray dividing line */
-            margin: 15px 0; /* Adjust vertical spacing */
+            border-top: 1px solid #F4ABC4; /* Light gray dividing line */
+            margin: 10px 0; /* Adjust vertical spacing */
             /* width: 80%; /* Make it smaller than full width */
         }
         
@@ -108,6 +101,12 @@
         <img src="picture/profile_pic_small.jpg" alt="Profile Photo" class="profile-pic">
         <h1>Fangyuan Yi （易 方圆）</h1>
         <p style="text-align: center; font-size: 14px;">(Last updated: March 2025)</p>
+        <ul class="contact-info">
+            <li>Email: fyi (at) keio dot jp</li>
+            <li class="sns">
+                <a href="https://x.com/fyi_119">X</a>
+            </li>
+        </ul>
     </div>
 
     
@@ -119,35 +118,15 @@
     </div>-->
 
     <div class="announcement">
-        <ul class="contact-info">
-            <li>Email: fyi (at) keio dot jp</li>
-            <li class="sns">
-                <a href="https://x.com/fyi_119">X</a>
-            </li>
-        </ul>
-    <p>I will join the Faculty of Economics at Keio University as an Assistant Professor (Tenure Track) in April 2025.</p>
-    <p>Previously, I worked as a data scientist at AI Lab, CyberAgent, Inc.</p>
-    <p>I earned my Ph.D. in Economics from Princeton University in 2023.</p>
-        
+            
+        <p>I will join the Faculty of Economics at Keio University as an Assistant Professor (Tenure Track) in April 2025.</p>
+        <p>Previously, I worked as a data scientist at AI Lab, CyberAgent, Inc.</p>
+        <p>I earned my Ph.D. in Economics from Princeton University in 2023.</p>
+            
     </div>
     
     <hr> 
-    <!-- Empty space -->
 
-    <!-- Education
-    <div class="section">
-        <h2>EDUCATION</h2>
-        <div class="entry">
-            <p>Ph.D. in Economics, Princeton University <span class="date">06/2023</span></p>
-        </div>
-        <div class="entry">
-            <p>M.A. in Economics, University of Tokyo <span class="date">09/2016</span></p>
-        </div>
-        <div class="entry">
-            <p>B.A. in Economics, University of International Business and Economics<span class="date">07/2014</span></p>
-        </div>
-    </div>
-     -->
     
     <!-- Research Interests -->
     <div class="section">
@@ -155,27 +134,20 @@
         <p>Macroeconomics, International Macroeconomics, International Finance</p>
     </div>
 
-    <!-- Employment and Affiliation 
-    <div class="section">
-        <h2>EMPLOYMENT AND AFFILIATION</h2>
-        <div class="entry">
-            <p><b>Tenure-Track Assistant Professor,</b> <i>Faculty of Economics, Keio University </i> <span class="date"> 2025/04 </span></p>
-        </div>
-        <div class="entry">
-            <p><b> Research Scientist/Data Scientist </b> <i> AI Lab, CyberAgent, Inc. </i>  <span class="date"> 2023/09 </span></p>
-        </div>
-    </div> -->
     <hr> 
+
+    
     <!-- Working Papers and Works in Progress -->
     <div class="section">
     <h2>WORKING PAPERS AND WORKS IN PROGRESS</h2>
     <ul>
         <li>
             <a href="https://www.dropbox.com/scl/fi/4vk7rtpw01ch9ioc1jh05/Insulated_LC.pdf?rlkey=tvy7ufn5dfj5rniwthv3ik2yb&e=1&st=hb05tsit&dl=0" class="paper-title">
-                The Insulated Local Currency Sovereign Risk
+                The Insulated Local Currency Sovereign Risk 
             </a> 
-            <span class="italic">Under Review</span><br>
-            <i>Presented at: Princeton Student Macroshop (2019-2022)</i>
+            <i> Under Review</i>
+            <br>
+            <pre>Presented at: Princeton Student Macroshop (2019-2022)</pre>
         </li>
 
         <li>
@@ -183,24 +155,24 @@
                 Penalties and Premiums in Sovereign Credit Ratings
             </a> 
             (with Ethan B. Kapstein, Jonah M. Rexer, and Adityamohan Tantravahi) 
-            <span class="italic">Under Review</span><br>
-            <i>Presented at: Princeton Development Finance Workshop (2023), University of Tokyo Macroeconomics Workshop (2024)</i>
+            <i> Under Review</i><br>
+            <pre>Presented at: Princeton Development Finance Workshop (2023), University of Tokyo Macroeconomics Workshop (2024)</pre>
         </li>
 
         <li>
             <a class="paper-title">
                 Sovereign Default: with Public Debt as Liquidity
             </a> 
-            <span class="italic">Under Review</span> <br>
-            <i>Presented at: University of Tokyo Macro-Finance Workshop (2016), Macroeconomics Workshop (2016), 
-            Conference at the Institution of Social Science (2017), Japan Economics Society Annual Meeting (2017)</i>
+            <i> Under Review</i><br>
+            <pre>Presented at: University of Tokyo Macro-Finance Workshop (2016), Macroeconomics Workshop (2016), 
+            Conference at the Institution of Social Science (2017), Japan Economics Society Annual Meeting (2017)</pre>
         </li>
 
         <li>
             <aclass="paper-title">
                 Currency Choice of Government Bond
             </a><br>
-            <span class="italic">Draft in progress</span>
+            <i> Draft in progress</i><br>
         </li>
     </ul>
 </div>
