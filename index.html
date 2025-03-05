@@ -10,20 +10,28 @@
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 5px auto;
-            padding: 10px;
+            padding: 5px;
             border: 0px solid #ddd;
             line-height: 1.0;
             color: #61677A;
         }
-        announcement{
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 5px auto;
-            padding: 0px;
-            border: 0px solid #ddd;
-            line-height: 1.0;
-            color: #D17D98;
+        
+        .announcement p {  /* Fixed selector */
+            margin-bottom: 5px; /* Reduce space between paragraphs */
+            line-height: 1.2; /* Tighten line spacing */
         }
+        
+        .contact-info {
+            list-style: none; /* Remove default list styling */
+            padding-left: 0;
+            text-align: center; /* Center align the list items */
+        }
+        
+        .contact-info li {
+            display: inline-block; /* Make list items inline */
+            margin: 3px 8px; /* Reduce spacing between items */
+        }
+        
         h1 {
             text-align: center;
             font-size: 28px;
@@ -78,6 +86,13 @@
             height: auto; /* Keeps aspect ratio */
             margin: 0 auto; /* Centers the image */
         }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc; /* Light gray dividing line */
+            margin: 15px 0; /* Adjust vertical spacing */
+            /* width: 80%; /* Make it smaller than full width */
+        }
         
 }
 
@@ -104,21 +119,20 @@
     </div>-->
 
     <div class="announcement">
-        <p>I will join the Faculty of Economics at Keio University as an Assistant Professor (Tenure Track) in April 2025. </p>
-        <p>Previously, I worked as a data scientist at AI Lab, CyberAgent, Inc. </p>
-        <p>I earned my Ph.D. in Economics from Princeton University in 2023.</p>
-        <ul style="list-style-position: outside; padding-left: 20px;">
-            <li>
-                Email: yifangyuan1109 (at) gmail dot com
-            </li>
-            <li>
+        <ul class="contact-info">
+            <li>Email: yifangyuan1109 (at) gmail dot com</li>
+            <li class="sns">
                 <a href="https://x.com/fyi_119">X</a>
             </li>
         </ul>
-
-
+    <p>I will join the Faculty of Economics at Keio University as an Assistant Professor (Tenure Track) in April 2025.</p>
+    <p>Previously, I worked as a data scientist at AI Lab, CyberAgent, Inc.</p>
+    <p>I earned my Ph.D. in Economics from Princeton University in 2023.</p>
+        
     </div>
-
+    
+    <hr> 
+    <!-- Empty space -->
 
     <!-- Education
     <div class="section">
@@ -134,7 +148,7 @@
         </div>
     </div>
      -->
-
+    
     <!-- Research Interests -->
     <div class="section">
         <h2>RESEARCH INTEREST</h2>
@@ -151,7 +165,7 @@
             <p><b> Research Scientist/Data Scientist </b> <i> AI Lab, CyberAgent, Inc. </i>  <span class="date"> 2023/09 </span></p>
         </div>
     </div> -->
-
+    <hr> 
     <!-- Working Papers and Works in Progress -->
     <div class="section">
     <h2>WORKING PAPERS AND WORKS IN PROGRESS</h2>
